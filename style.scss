@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kodchasan', sans-serif;
+}
+header{
+    background-color:#EFEEF3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        width: 80vw;
+    }
+    @media(max-width: 900px){
+        flex-direction: column;
+        align-items: center;
+        ul{
+            flex-direction: column;
+            align-items: center;
+            height: 30vh;
+            padding: 10px;
+        }
+    }
+}
+main{
+    background-color:#EFEEF3;
+    .background{
+        width: 100%;
+        height: 30vh;
+        object-fit:cover;
+        @media (max-width: 900px){
+            display: none;
+        }
+    }
+    .elseve-gloss-container{
+        padding: 3.5% 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .img1{
+            width: 30vw;
+        }
+        .text1-container{
+            width: 40vw;
+            text-align: center;
+            font-size: 22px;
+            margin-right: 3rem;
+            h2{
+                font-weight: 400;
+                margin-bottom: 4%;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        @media (max-width:900px){
+            flex-direction: column;
+            gap: 2rem;
+            padding: 0;
+            .text1-container{
+                margin: 0;
+                width: 80vw;
+            }
+            .img1{
+                width: 60%;
+            }
+        }
+    }
+    .products-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        p{
+            width: 30vw;
+            font-size: 25px;
+        }
+        .products-img-1, .products-img-2{
+            width: 23vw;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5rem;
+            
+        }
+        @media (max-width:900px){
+            flex-direction: column;
+            p{
+                margin: 30px 0;
+                width: 80vw;
+                text-align: center;
+            }
+            .products-img-1, .products-img-2{
+                width: 60vw;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

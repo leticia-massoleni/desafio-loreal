@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kodchasan", sans-serif;
+}
+
+header {
+  background-color: #EFEEF3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 80vw;
+}
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header ul {
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    padding: 10px;
+  }
+}
+
+main {
+  background-color: #EFEEF3;
+}
+main .background {
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 900px) {
+  main .background {
+    display: none;
+  }
+}
+main .elseve-gloss-container {
+  padding: 3.5% 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .elseve-gloss-container .img1 {
+  width: 30vw;
+}
+main .elseve-gloss-container .text1-container {
+  width: 40vw;
+  text-align: center;
+  font-size: 22px;
+  margin-right: 3rem;
+}
+main .elseve-gloss-container .text1-container h2 {
+  font-weight: 400;
+  margin-bottom: 4%;
+}
+main .elseve-gloss-container .text1-container p {
+  font-size: 20px;
+}
+@media (max-width: 900px) {
+  main .elseve-gloss-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
+  main .elseve-gloss-container .text1-container {
+    margin: 0;
+    width: 80vw;
+  }
+  main .elseve-gloss-container .img1 {
+    width: 60%;
+  }
+}
+main .products-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .products-container p {
+  width: 30vw;
+  font-size: 25px;
+}
+main .products-container .products-img-1, main .products-container .products-img-2 {
+  width: 23vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+@media (max-width: 900px) {
+  main .products-container {
+    flex-direction: column;
+  }
+  main .products-container p {
+    margin: 30px 0;
+    width: 80vw;
+    text-align: center;
+  }
+  main .products-container .products-img-1, main .products-container .products-img-2 {
+    width: 60vw;
+    margin-bottom: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */
